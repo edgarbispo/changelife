@@ -6,6 +6,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import thumbImg from '../../../public/images/thumb.png'
 
+import {FiChevronLeft, FiChevronsLeft, FiChevronRight, FiChevronsRight} from "react-icons/fi";
+
 export default function Disputas(){
     return(
         <>
@@ -28,6 +30,25 @@ export default function Disputas(){
                             <p>Lorem ipsum dolor sit amet. Non maxime quaerat At sequi aperiam non rerum voluptates sed aspernatur natus et deleniti sunt et sapiente deleniti.</p>
                         </a>
                     </Link>
+
+                    <div className={styles.buttonNavigate}>
+                        <div>
+                            <button>
+                                <FiChevronsLeft size={25} color={"#FFF"}/>
+                            </button>
+                            <button>
+                                <FiChevronLeft size={25} color={"#FFF"}/>
+                            </button>
+                        </div>
+                        <div>
+                            <button>
+                                <FiChevronRight size={25} color={"#FFF"}/>
+                            </button>
+                            <button>
+                                <FiChevronsRight size={25} color={"#FFF"}/>
+                            </button>
+                        </div>
+                    </div>
 
                 </div>
             </main>
