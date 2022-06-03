@@ -21,18 +21,18 @@ export function Header(){
                     <ActiveLink href={"/"} activeClassName={styles.active}>
                         <a>Home</a>
                     </ActiveLink>
-                    <ActiveLink href={"/disputas"} activeClassName={styles.active}>
-                        <a>Disputas</a>
+                    <ActiveLink href={"/sorteios"} activeClassName={styles.active}>
+                        <a>Sorteios</a>
                     </ActiveLink>
                     <ActiveLink href={"/sobre"} activeClassName={styles.active}>
                         <a>Quem somos?</a>
                     </ActiveLink>
+
                 </nav>
 
                 <a className={styles.userIcon}>
                     <FontAwesomeIcon icon={faUser} size="2x"/>
                 </a>
-
                 <a className={styles.readyButton} type={"button"}>COMEÇAR</a>
 
             </div>

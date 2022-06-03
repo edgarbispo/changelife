@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Substituindo prismic-dom por @prismicio/helpers&#10;&#10;https://prismic.io/docs/technologies/prismic-helpers-v2-migration-guide">
-      <change afterPath="$PROJECT_DIR$/src/services/prismic.ts" afterDir="false" />
+    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Antes de converter para Sorteio">
+      <change afterPath="$PROJECT_DIR$/src/pages/sobre/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sobre/styles.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sorteios/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/sorteios/sorteio.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/disputas/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/disputas/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/disputas/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sorteios/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/disputas/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sorteios/styles.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +74,7 @@
       <workItem from="1653918511457" duration="7099000" />
       <workItem from="1653939764269" duration="8982000" />
       <workItem from="1654170699484" duration="23553000" />
-      <workItem from="1654204341318" duration="1572000" />
+      <workItem from="1654204341318" duration="11113000" />
     </task>
     <task id="LOCAL-00001" summary="Página Home">
       <created>1654182741027</created>
@@ -87,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654193118043</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Antes de converter para Sorteio">
+      <created>1654280277925</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654280277925</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +117,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Página Home" />
     <MESSAGE value="Substituindo prismic-dom por @prismicio/helpers&#10;&#10;https://prismic.io/docs/technologies/prismic-helpers-v2-migration-guide" />
-    <option name="LAST_COMMIT_MESSAGE" value="Substituindo prismic-dom por @prismicio/helpers&#10;&#10;https://prismic.io/docs/technologies/prismic-helpers-v2-migration-guide" />
+    <MESSAGE value="Antes de converter para Sorteio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Antes de converter para Sorteio" />
   </component>
 </project>

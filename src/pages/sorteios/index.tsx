@@ -16,7 +16,7 @@ import {any} from "prop-types";
 
 // https://png-pixel.com    Site para pesquisar cor
 
-type Disputa = {
+type Sorteio = {
     slug: string,
     title: string,
     description: string,
@@ -24,35 +24,71 @@ type Disputa = {
     updateAt: string,
 }
 
-interface DisputaProps{
-    disputas: Disputa[],
+interface SorteioProps{
+    sorteios: Sorteio[],
     page: string,
     totalPage: string,
 }
 
-export default function Disputas({disputas:disputasPrismic, page, totalPage }: DisputaProps){
+export default function Sorteios({sorteios:sorteiosPrismic, page, totalPage }: SorteioProps){
 
     const [currentPage, setCurrentPage] = useState(Number(page));
-    const [disputas, setDisputas] = useState(disputasPrismic || []);
+    const [sorteios, setSorteios] = useState(sorteiosPrismic || []);
 
-    //Buscar novas disputas
+    //Buscar novas sorteios
+    async function reqSorteios(pageNumber: number){
+        const prismic = getPrismicClient();
+
+        const response = await prismic.query([
+            Prismic.Predicates.at('document.type', 'sorteio')
+        ],
+        {
+            orderings: '[document.last_publication_date]', //Ordenar pelo mais recente
+            fetch: ['sorteio.title', 'sorteio.description', 'sorteio.cover'],
+            pageSize: 3,
+            page: String(pageNumber)
+        })
+        return response;
+    }
 
     async function navigatePage(pageNumber: number) {
+        const response = await reqSorteios(pageNumber);
 
+        if (response.results.length === 0){
+            return;
+        }
+
+        const getSorteios = response.results.map(sorteio => {
+            return{
+                slug: sorteio.uid,
+                title: RichText.asText(sorteio.data.title),
+                description: RichText.asText(sorteio.data.description),
+                cover: sorteio.data.cover.url,
+                updateAt: new Date(sorteio.last_publication_date).toLocaleDateString('pt-BR', {
+                    day: '2-digit',
+                    month: 'long',
+                    year: 'numeric'
+                })
+            }
+
+        })
+
+        setCurrentPage(pageNumber);
+        setSorteios(getSorteios);
     }
 
     return(
         <>
             <Head>
-                <title>Disputas | Change Life</title>
+                <title>Sorteios | Change Life</title>
             </Head>
             <main className={styles.container}>
-                <div className={styles.disputas}>
-                    {disputas.map( disputa => (
-                        <Link key={disputa.slug} href={`/disputas/${disputa.slug}`}>
-                            <a key={disputa.slug}>
-                                <Image src={disputa.cover}
-                                       alt={disputa.title}
+                <div className={styles.sorteios}>
+                    {sorteios.map( sorteio => (
+                        <Link key={sorteio.slug} href={`/sorteios/${sorteio.slug}`}>
+                            <a key={sorteio.slug}>
+                                <Image src={sorteio.cover}
+                                       alt={sorteio.title}
                                        width={720}
                                        height={410}
                                        quality={100}
@@ -60,9 +96,9 @@ export default function Disputas({disputas:disputasPrismic, page, totalPage }: D
                                        blurDataURL={"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM8eepsPQAHpQLhss/HigAAAABJRU5ErkJggg=="}
                                 />
                                 <p/>
-                                <strong>{disputa.title}</strong>
-                                <time>{disputa.updateAt}</time>
-                                <p>{disputa.description}</p>
+                                <strong>{sorteio.title}</strong>
+                                <time>{sorteio.updateAt}</time>
+                                <p>{sorteio.description}</p>
                             </a>
                         </Link>
                     ))}
@@ -101,21 +137,21 @@ export const getStaticProps: GetStaticProps = async () => {
 
     const prismic = getPrismicClient();
     const response = await prismic.query([
-            Prismic.Predicates.at('document.type', 'disputa'),
-        ]
-        , {
+            Prismic.Predicates.at('document.type', 'sorteio'),
+        ],
+        {
             orderings: '[document.last_publication_date]', //Ordenar pelo mais recente
-            fetch: ['disputa.title', 'disputa.description', 'disputa.cover'],
+            fetch: ['sorteio.title', 'sorteio.description', 'sorteio.cover'],
             pageSize: 3
         })
 
-    const disputas = response.results.map( disputa => {
+    const sorteios = response.results.map(sorteio => {
         return{
-            slug: disputa.uid,
-            title: RichText.asText(disputa.data.title),
-            description: RichText.asText(disputa.data.description),
-            cover: disputa.data.cover.url,
-            updateAt: new Date(disputa.last_publication_date).toLocaleDateString('pt-BR', {
+            slug: sorteio.uid,
+            title: RichText.asText(sorteio.data.title),
+            description: RichText.asText(sorteio.data.description),
+            cover: sorteio.data.cover.url,
+            updateAt: new Date(sorteio.last_publication_date).toLocaleDateString('pt-BR', {
                 day: '2-digit',
                 month: 'long',
                 year: 'numeric'
@@ -126,7 +162,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
     return {
         props :{
-            disputas,
+            sorteios: sorteios,
             page: response.page,
             totalPage: response.total_pages
         },

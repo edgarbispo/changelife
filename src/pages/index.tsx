@@ -28,7 +28,7 @@ export default function Home({content}:ContentProps) {
                   <section className={styles.ctaText}>
                       <h1>{content.title}</h1>
                       <span>{content.titleContent}</span>
-                      <a href={'/disputas'}>
+                      <a href={'/sorteios'}>
                           <button>
                               COMEÇAR AGORA!!
                           </button>
