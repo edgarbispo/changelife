@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Antes de converter para Sorteio">
-      <change afterPath="$PROJECT_DIR$/src/pages/sobre/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sobre/styles.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sorteios/[slug].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sorteios/sorteio.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/auth/AuthInput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/auth/styles.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/autenticacao.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/autenticacao.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/disputas/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sorteios/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/disputas/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sorteios/styles.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,21 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/edgarbispo/Desktop/changelife/node_modules/typescript/lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/edgarbispo/Desktop/changelife/src/styles",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/edgarbispo/Desktop/changelife/node_modules/typescript/lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/styles" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -75,6 +75,7 @@
       <workItem from="1653939764269" duration="8982000" />
       <workItem from="1654170699484" duration="23553000" />
       <workItem from="1654204341318" duration="11113000" />
+      <workItem from="1654367829876" duration="1341000" />
     </task>
     <task id="LOCAL-00001" summary="Página Home">
       <created>1654182741027</created>
