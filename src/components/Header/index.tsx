@@ -30,10 +30,15 @@ export function Header(){
 
                 </nav>
 
-                <a className={styles.userIcon}>
+                <a className={styles.userIcon}
+                   href={'/autenticacao'}
+                   type={"button"}>
                     <FontAwesomeIcon icon={faUser} size="2x"/>
                 </a>
-                <a className={styles.readyButton} type={"button"}>COMEÇAR</a>
+                <a className={styles.readyButton}
+                   href={'/autenticacao'}
+                   type={"button"}>Cadastro Grátis
+                </a>
 
             </div>
         </header>

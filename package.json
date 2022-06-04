@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.1.18",
     "@prismicio/client": "5.1.0",
+    "firebase": "^9.8.2",
     "next": "12.1.6",
     "prismic-dom": "^2.2.7",
     "react": "18.1.0",

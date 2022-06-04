@@ -36,7 +36,6 @@ export default function Home({content}:ContentProps) {
                   </section>
                   <img src={content.titleImage} alt=""/>
               </div>
-
           </main>
       </>
   )
