@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser} from '@fortawesome/free-regular-svg-icons';
 
 import {ActiveLink} from "../ActiveLink";
+import AvatarUsurio from "../template/AvatarUsuario";
 
 export function Header(){
     return(
@@ -30,15 +31,15 @@ export function Header(){
 
                 </nav>
 
-                <a className={styles.userIcon}
-                   href={'/autenticacao'}
-                   type={"button"}>
-                    <FontAwesomeIcon icon={faUser} size="2x"/>
-                </a>
-                <a className={styles.readyButton}
-                   href={'/autenticacao'}
-                   type={"button"}>Cadastro Grátis
-                </a>
+                <div className={styles.usuario}>
+
+                    <AvatarUsurio/>
+                    <a className={styles.readyButton}
+                       href={'/autenticacao'}
+                       type={"button"}>Cadastro Grátis
+                    </a>
+
+                </div>
 
             </div>
         </header>
