@@ -1,16 +1,23 @@
 import Link from 'next/link'
-import useAuth from "../../data/hook/useAuth";
 import styles from './styles.module.scss'
+
+import LoginMenu from "./LoginMenu";
+import useAuth from "../../data/hook/useAuth";
 
 export default function AvatarUsurio(){
     const {usuario} = useAuth()
-    console.log(usuario?.imagemUrl)
     return(
-        <Link href={"/perfil"}>
-            <img src={usuario?.imagemUrl ?? '/images/avatar.png'}
-                 alt="Usuário"
-                 className={styles.avatarImg}
-            />
-        </Link>
+        <>
+            {usuario?.imagemUrl ?
+                <LoginMenu/>
+            :
+                <Link href={"/autenticacao"}>
+                    <img src={'/images/avatar.png'}
+                         alt="Usuário"
+                         className={styles.avatarImg}
+                    />
+                </Link>
+            }
+        </>
     )
 }

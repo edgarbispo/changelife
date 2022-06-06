@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Correção do Merge">
-      <change afterPath="$PROJECT_DIR$/public/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/AvatarUsuario.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/styles.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/perfil.tsx" afterDir="false" />
+    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Criação do Avatar">
+      <change afterPath="$PROJECT_DIR$/public/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/LoginMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/styles.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/auth/styles.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/auth/styles.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/AvatarUsuario.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/AvatarUsuario.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/context/AuthContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/context/AuthContext.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/autenticacao.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/autenticacao.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +32,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/edgarbispo/Desktop/changelife/public/images",
+    "last_opened_file_path": "/Users/edgarbispo/Desktop/changelife/src/components/auth",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,11 +67,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/auth" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -82,7 +93,7 @@
       <workItem from="1654204341318" duration="11113000" />
       <workItem from="1654367829876" duration="17295000" />
       <workItem from="1654385445830" duration="3680000" />
-      <workItem from="1654515134607" duration="8974000" />
+      <workItem from="1654515134607" duration="24624000" />
     </task>
     <task id="LOCAL-00001" summary="Página Home">
       <created>1654182741027</created>
@@ -133,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654523243870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Criação do Avatar">
+      <created>1654529836025</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1654529836025</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +176,7 @@
     <MESSAGE value="Conectando ao Firebase" />
     <MESSAGE value="Conectar Firebase" />
     <MESSAGE value="Correção do Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção do Merge" />
+    <MESSAGE value="Criação do Avatar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação do Avatar" />
   </component>
 </project>

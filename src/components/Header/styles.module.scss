@@ -5,7 +5,7 @@
 }
 
 .headerContent{
-  min-width: 640px;
+  min-width: 857px;
   max-width: 1120px;
   height: 6rem;
   margin: 0 auto;
@@ -19,7 +19,7 @@
   }
 
   nav{
-    margin-left: 5rem;
+//    margin-left: 5rem;
     height: 6rem;
 
     a{
@@ -76,7 +76,7 @@
   }
 }
 
-@media(max-width: 935px) {
+@media(max-width: 1013px) {
   .headerContainer{
     height: 7rem;
     padding: 0.5rem 0;
@@ -97,5 +97,6 @@
     .readyButton{
       display: none;
     }
+
   }
 }

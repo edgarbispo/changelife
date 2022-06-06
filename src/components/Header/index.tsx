@@ -2,13 +2,14 @@ import styles from './styles.module.scss';
 import Image from 'next/image';
 import logo from '../../../public/images/logo.png'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUser} from '@fortawesome/free-regular-svg-icons';
-
 import {ActiveLink} from "../ActiveLink";
 import AvatarUsurio from "../template/AvatarUsuario";
+import useAuth from "../../data/hook/useAuth";
 
 export function Header(){
+
+    const {usuario} = useAuth()
+
     return(
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
@@ -25,6 +26,11 @@ export function Header(){
                     <ActiveLink href={"/sorteios"} activeClassName={styles.active}>
                         <a>Sorteios</a>
                     </ActiveLink>
+                    {usuario?.email &&
+                        <ActiveLink href={"/apostas"} activeClassName={styles.active}>
+                            <a>Minhas Apostas</a>
+                        </ActiveLink>
+                    }
                     <ActiveLink href={"/sobre"} activeClassName={styles.active}>
                         <a>Quem somos?</a>
                     </ActiveLink>
