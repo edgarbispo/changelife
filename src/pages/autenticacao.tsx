@@ -1,6 +1,7 @@
 import {useState} from "react";
 import styles from '../styles/autenticacao.module.scss'
 import AuthInput from "../components/auth/AuthInput";
+<<<<<<< HEAD
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
 import useAuth from "../data/hook/useAuth";
@@ -10,10 +11,16 @@ export default function Autenticacao(){
     const {usuario, loginGoogle} = useAuth()
 
     const [erro, setErro] = useState(null)
+=======
+
+export default function Autenticacao(){
+
+>>>>>>> origin/main
     const [modo, setModo] = useState<'login' | 'cadastro'>('login')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
+<<<<<<< HEAD
     function exibirErro(msg, tempoSegundos = 5) {
 
         setErro(msg)
@@ -91,6 +98,25 @@ export default function Autenticacao(){
                 )}
 
             </div>
+=======
+    return(
+        <div className={styles.container}>
+            <h1>Autenticação</h1>
+            <AuthInput
+                label={"Email"}
+                valor={email}
+                tipo={'email'}
+                valorMudou={setEmail}
+                obrigatorio
+            />
+            <AuthInput
+                label={"Senha"}
+                tipo={"password"}
+                valor={senha}
+                valorMudou={setSenha}
+                obrigatorio
+            />
+>>>>>>> origin/main
         </div>
     )
 }
