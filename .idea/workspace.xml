@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Conectando ao Firebase" />
+    <list default="true" id="72b182c5-923c-484b-a98e-b5e6970ebf4d" name="Changes" comment="Conectar Firebase" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +73,7 @@
       <workItem from="1654204341318" duration="11113000" />
       <workItem from="1654367829876" duration="17295000" />
       <workItem from="1654385445830" duration="3680000" />
-      <workItem from="1654515134607" duration="3835000" />
+      <workItem from="1654515134607" duration="4385000" />
     </task>
     <task id="LOCAL-00001" summary="Página Home">
       <created>1654182741027</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654522311062</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Conectar Firebase">
+      <created>1654522965773</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654522965773</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +140,7 @@
     <MESSAGE value="Antes de converter para Sorteio" />
     <MESSAGE value="Autenticacao" />
     <MESSAGE value="Conectando ao Firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Conectando ao Firebase" />
+    <MESSAGE value="Conectar Firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="Conectar Firebase" />
   </component>
 </project>
